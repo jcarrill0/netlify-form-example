@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netlify Form - Example</title>
+</head>
+<body>
+    <form name="contact" method="POST" data-netlify="true">
+        <input type="text" name="fullname" placeholder="Write your Fullname" />
+        <br> 
+        <input type="email" name="email" placeholder="Write your email" />
+        <br>
+        <p>
+          <label>Your Role: 
+              <select name="position[]" multiple>
+                <option value="CEO">CEO</option>
+                <option value="Developer">Developer</option>
+                <option value="Designer">Designer</option>
+              </select>
+          </label>
+        </p>
+        <br>
+        <textarea name="message" placeholder="Write your message" ></textarea>
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+      
+</body>
+</html>
